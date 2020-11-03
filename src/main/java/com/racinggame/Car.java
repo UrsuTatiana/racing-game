@@ -11,4 +11,7 @@ public class Car {
     boolean damaged;
     String color;
 
+    // has a relationship or aggregation
+     Engine engine;
+
 }
