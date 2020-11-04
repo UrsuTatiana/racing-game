@@ -1,17 +1,10 @@
 package com.racinggame;
 
-public class Car {
-    String name;
-    double fuelLevel;
-    double mileage;
-    double totalTraveledDistance;
-    double maxSpeed;
+public class Car extends AutoVehicle{
+
 
     int doorCount;
-    boolean damaged;
-    String color;
 
-    // has a relationship or aggregation
-     Engine engine;
+
 
 }
