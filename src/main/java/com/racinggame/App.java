@@ -55,8 +55,11 @@ public class App {
         System.out.println("Door count: " + car2.doorCount);
         System.out.println("Colour: " + car2.color);
 
+        double distanceForCar1 = carReference.accelerate(60,1);
 
-        System.out.println("Initial name for car1: " + carReference.name);
+        double distanceForCar2 = car2.accelerate(100,1);
+
+       /* System.out.println("Initial name for car1: " + carReference.name);
 
         carReference.name = "Audi";
         System.out.println("Changed name for car1: " + carReference.name);
@@ -76,7 +79,7 @@ public class App {
 
         car2 = null;
 
-        System.out.println(carReference.name);
+        System.out.println(carReference.name);*/
 
 
     }
