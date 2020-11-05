@@ -17,7 +17,7 @@ public class Vehicle {
         //Ferrari is accelerating with 100km/h for 1h
         System.out.println(name + "is accelerating with" + speed + "km/h for" + durationInHours + "h");
 
-        //local variable
+        //local variable.
         double distance = speed * durationInHours;
 
         totalTraveledDistance = totalTraveledDistance + distance;
