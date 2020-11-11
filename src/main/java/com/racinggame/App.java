@@ -3,7 +3,26 @@ package com.racinggame;
 public class App {
     public static void main( String[] args )
     {
-       Car carReference = new Car();
+
+
+        Game game = new Game();
+        game.start();
+
+
+
+       /* Engine autoVehicleEngine = new Engine();
+        autoVehicleEngine.manufacturer = "VW";
+
+        AutoVehicle autoVehicle = new AutoVehicle(autoVehicleEngine);
+
+        Engine engine = new Engine();
+        Car car = new Car(engine);
+
+        Engine engine1 = new Engine();
+        engine1.manufacturer = "Ferrari";
+        engine1.capacity = 3000;
+
+       Car carReference = new Car(engine1);
        carReference.name = "Ferrari";
        carReference.maxSpeed = 300;
        carReference.fuelLevel = 60;
@@ -14,11 +33,6 @@ public class App {
        carReference.color = "Red";
 
 
-       Engine engine1 = new Engine();
-       engine1.manufacturer = "Ferrari";
-       engine1.capacity = 3000;
-
-       carReference.engine = engine1;
 
         System.out.println("Engine capacity: " + engine1.capacity);
         System.out.println("Car engine capacity: " + carReference.engine.capacity);
@@ -37,15 +51,15 @@ public class App {
         System.out.println("Door count: " + carReference.doorCount);
         System.out.println("Colour: " + carReference.color);
 
-        
-        Car car2 = new Car();
+
+
+        Car car2 = new Car(new Engine());
         car2.name = "Renault";
         car2.fuelLevel = 70;
         car2.totalTraveledDistance = 100;
         car2.maxSpeed = 300;
         car2.mileage = 10;
 
-        car2.engine = new Engine();
         car2.engine.capacity = 2000;
 
         System.out.println("Properties of Car2: " + car2.name);
@@ -57,7 +71,7 @@ public class App {
         System.out.println("Door count: " + car2.doorCount);
         System.out.println("Colour: " + car2.color);
 
-        System.out.println("*************");
+
 
         double distanceForCar1 = carReference.accelerate(60,1);
 
@@ -67,7 +81,7 @@ public class App {
         Mechanic mechanic = new Mechanic();
         mechanic.repair(carReference);
         System.out.println("Engine manufacturer name after repair: " + carReference.engine.manufacturer );
-
+*/
 
        /* System.out.println("Initial name for car1: " + carReference.name);
 
@@ -90,6 +104,9 @@ public class App {
         car2 = null;
 
         System.out.println(carReference.name);*/
+
+        /*System.out.println("modulo example");
+        System.out.println(4%2);*/
 
 
     }
