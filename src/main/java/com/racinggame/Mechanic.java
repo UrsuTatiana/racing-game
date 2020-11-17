@@ -4,10 +4,11 @@ public class Mechanic {
 
     public void repair(AutoVehicle autoVehicle){
 
-        autoVehicle.engine = new Engine();
+        autoVehicle.setEngine(new Engine());
 
-        autoVehicle.damaged = false;
+        autoVehicle.setDamaged(false);
 
-
+        // dam dorim sa scadem distanta parcursa  cu 100 km la schimbarea motorului
+        autoVehicle.setTotalTraveledDistance(autoVehicle.getTotalTraveledDistance() - 100);
     }
 }

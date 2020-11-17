@@ -8,27 +8,27 @@ public class App {
         game.start();
 
 
+       /*Vehicle vehicle1 = new Vehicle();
+       vehicle1.setName("Dacia");
 
-      /* Vehicle vehicle1 = new Vehicle();
-       vehicle1.name = "Dacia";
 
-      vehicle1.totalVehicleCount = 1;
+    // vehicle1.totalVehicleCount = 1;
 
        Vehicle vehicle2 = new Vehicle();
-       vehicle2.name = "Lada";
+       vehicle2.setName("Lada");
 
-       vehicle2.totalVehicleCount = 2;
+      *//* vehicle2.totalVehicleCount = 2;
 
-       Vehicle.totalVehicleCount = 3;
+       Vehicle.totalVehicleCount = 3;*//*
 
-        System.out.println("Total count from vehicle: " + vehicle1.name + ": "+ vehicle1.totalVehicleCount);
-        System.out.println("Total count from vehicle: " + vehicle2.name + ": "+ vehicle2.totalVehicleCount);
-        System.out.println("Total count from vehicle class: " + Vehicle.totalVehicleCount);*/
+        System.out.println("Total count from vehicle: " + vehicle1.getName() + ": "+ vehicle1.getTotalVehicleCount());
+        System.out.println("Total count from vehicle: " + vehicle2.getName() + ": "+ vehicle2.getTotalVehicleCount());
+        System.out.println("Total count from vehicle class: " + Vehicle.getTotalVehicleCount());
 
 
 
-       /* Engine autoVehicleEngine = new Engine();
-        autoVehicleEngine.manufacturer = "VW";
+        Engine autoVehicleEngine = new Engine();
+        autoVehicleEngine.setManufacturer("VW");
 
         AutoVehicle autoVehicle = new AutoVehicle(autoVehicleEngine);
 
@@ -36,57 +36,57 @@ public class App {
         Car car = new Car(engine);
 
         Engine engine1 = new Engine();
-        engine1.manufacturer = "Ferrari";
-        engine1.capacity = 3000;
+        engine1.setManufacturer("Ferrari");
+        engine1.setCapacity(3000);
 
        Car carReference = new Car(engine1);
-       carReference.name = "Ferrari";
-       carReference.maxSpeed = 300;
-       carReference.fuelLevel = 60;
-       carReference.mileage = 12.5;
-       carReference.totalTraveledDistance = 0;
-       carReference.damaged = false;
-       carReference.doorCount = 1;
-       carReference.color = "Red";
+       carReference.setName("Ferrari");
+       carReference.setMaxSpeed(300);
+       carReference.setFuelLevel(60);
+       carReference.setMileage(12.5);
+       carReference.setTotalTraveledDistance(0);
+       carReference.setDamaged(false);
+       carReference.setDoorCount(1);
+       carReference.setColor("Red");
 
 
 
-        System.out.println("Engine capacity: " + engine1.capacity);
-        System.out.println("Car engine capacity: " + carReference.engine.capacity);
+        System.out.println("Engine capacity: " + engine1.getCapacity());
+        System.out.println("Car engine capacity: " + carReference.getEngine().getCapacity());
 
 
-        engine1.capacity = 4000;
+        engine1.setCapacity(4000);
 
-        System.out.println("Car engine capacity after update: " + carReference.engine.capacity);
+        System.out.println("Car engine capacity after update: " + carReference.getEngine().getCapacity());
 
-        System.out.println("Properties of car: " + carReference.name);
-        System.out.println("Max speed: " + carReference.maxSpeed);
-        System.out.println("Fuel level: " + carReference.fuelLevel);
-        System.out.println("Mileage: " + carReference.mileage);
-        System.out.println("Total distance: " + carReference.totalTraveledDistance);
-        System.out.println("Damaged: " + carReference.damaged);
-        System.out.println("Door count: " + carReference.doorCount);
-        System.out.println("Colour: " + carReference.color);
+        System.out.println("Properties of car: " + carReference.getName());
+        System.out.println("Max speed: " + carReference.getMaxSpeed());
+        System.out.println("Fuel level: " + carReference.getFuelLevel());
+        System.out.println("Mileage: " + carReference.getMileage());
+        System.out.println("Total distance: " + carReference.getTotalTraveledDistance());
+        System.out.println("Damaged: " + carReference.isDamaged());
+        System.out.println("Door count: " + carReference.getDoorCount());
+        System.out.println("Colour: " + carReference.getColor());
 
 
 
         Car car2 = new Car(new Engine());
-        car2.name = "Renault";
-        car2.fuelLevel = 70;
-        car2.totalTraveledDistance = 100;
-        car2.maxSpeed = 300;
-        car2.mileage = 10;
+        car2.setName("Renault");
+        car2.setFuelLevel(70);
+        car2.setTotalTraveledDistance(100);
+        car2.setMaxSpeed(300);
+        car2.setMileage(10);
 
-        car2.engine.capacity = 2000;
+        car2.getEngine().setCapacity(2000);
 
-        System.out.println("Properties of Car2: " + car2.name);
-        System.out.println("Max speed: " + car2.maxSpeed);
-        System.out.println("Fuel level: " + car2.fuelLevel);
-        System.out.println("Mileage: " + car2.mileage);
-        System.out.println("Total distance: " + car2.totalTraveledDistance);
-        System.out.println("Damaged: " + car2.damaged);
-        System.out.println("Door count: " + car2.doorCount);
-        System.out.println("Colour: " + car2.color);
+        System.out.println("Properties of Car2: " + car2.getName());
+        System.out.println("Max speed: " + car2.getMaxSpeed());
+        System.out.println("Fuel level: " + car2.getFuelLevel());
+        System.out.println("Mileage: " + car2.getMileage());
+        System.out.println("Total distance: " + car2.getTotalTraveledDistance());
+        System.out.println("Damaged: " + car2.isDamaged());
+        System.out.println("Door count: " + car2.getDoorCount());
+        System.out.println("Colour: " + car2.getColor());
 
 
 
@@ -94,35 +94,35 @@ public class App {
 
         double distanceForCar2 = car2.accelerate(130,1);
 
-        System.out.println("Engine manufacturer name before repair: " + carReference.engine.manufacturer );
+        System.out.println("Engine manufacturer name before repair: " + carReference.getEngine().getManufacturer());
         Mechanic mechanic = new Mechanic();
         mechanic.repair(carReference);
-        System.out.println("Engine manufacturer name after repair: " + carReference.engine.manufacturer );
-*/
-
-       /* System.out.println("Initial name for car1: " + carReference.name);
-
-        carReference.name = "Audi";
-        System.out.println("Changed name for car1: " + carReference.name);
+        System.out.println("Engine manufacturer name after repair: " + carReference.getEngine().getManufacturer());
 
 
-        carReference = new Car();
-        System.out.println("Name of new car; "+ carReference.name);
-        carReference.name = "BMW";
+       System.out.println("Initial name for car1: " + carReference.getName());
+
+        carReference.setName("Audi");
+        System.out.println("Changed name for car1: " + carReference.getName());
+
+
+        carReference = new Car(new Engine());
+        System.out.println("Name of new car; "+ carReference.getName());
+        carReference.setName("BMW");
 
         carReference = car2;
-        System.out.println("Name of car referenced from 2 variables carReference: " + carReference.name);
-        System.out.println("Name of car referenced from 2 variables car2: " + car2.name);
+        System.out.println("Name of car referenced from 2 variables carReference: " + carReference.getName());
+        System.out.println("Name of car referenced from 2 variables car2: " + car2.getName());
 
-        car2.name = "Dacia";
-        System.out.println("Updated name of car referenced from 2 variables carReference: " + car2.name);
-        System.out.println("Updated name of car referenced from 2 variables car2: " + car2.name);
+        car2.setName("Dacia");
+        System.out.println("Updated name of car referenced from 2 variables carReference: " + car2.getName());
+        System.out.println("Updated name of car referenced from 2 variables car2: " + car2.getName());
 
         car2 = null;
 
-        System.out.println(carReference.name);*/
+        System.out.println(carReference.getName());
 
-        /*System.out.println("modulo example");
+        System.out.println("modulo example");
         System.out.println(4%2);*/
 
 
