@@ -4,16 +4,17 @@ import java.util.Scanner;
 
 public class ScannerUtils {
 
-    Scanner scanner = new Scanner(System.in);
+    static final Scanner SCANNER = new Scanner(System.in);
 
-    public int nextIntAndMovedToNextLine(){
-        int integer = scanner.nextInt();
-        scanner.nextLine();
+    public static int nextIntAndMovedToNextLine(){
+        int integer = SCANNER.nextInt();
+        SCANNER.nextLine();
         return integer;
     }
 
-    public String nextLine(){
-        return scanner.nextLine();
+    public static String nextLine(){
+        return SCANNER.nextLine();
 
     }
 }
+

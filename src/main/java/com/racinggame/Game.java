@@ -4,7 +4,6 @@ import com.racinggame.utils.ScannerUtils;
 
 public class Game {
 
-    ScannerUtils scannerUtils = new ScannerUtils();
 
 
     public void start(){
@@ -22,13 +21,13 @@ public class Game {
 
     private int getPlayerCountFromUser(){
         System.out.println("Please enter number players:");
-        return scannerUtils.nextIntAndMovedToNextLine();
+        return ScannerUtils.nextIntAndMovedToNextLine();
 
         
     }
 
     private String getVehicleNameFromUser(){
         System.out.println("Please enter vehicle name:");
-        return scannerUtils.nextLine();
+        return ScannerUtils.nextLine();
     }
 }

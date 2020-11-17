@@ -1,5 +1,7 @@
 package com.racinggame;
 
+import java.time.LocalDate;
+
 public class Vehicle {
 
     //class variables (static variables)
@@ -15,6 +17,8 @@ public class Vehicle {
 
     boolean damaged;
     String color;
+
+    LocalDate manufacturingDate = LocalDate.now();
 
     public Vehicle() {
         totalVehicleCount++;
