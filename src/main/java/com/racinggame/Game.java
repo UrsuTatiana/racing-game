@@ -24,6 +24,7 @@ public class Game {
         System.out.println("Please enter number players:");
         return scannerUtils.nextIntAndMovedToNextLine();
 
+        
     }
 
     private String getVehicleNameFromUser(){

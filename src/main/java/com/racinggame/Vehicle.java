@@ -2,6 +2,10 @@ package com.racinggame;
 
 public class Vehicle {
 
+    //class variables (static variables)
+    static  int totalVehicleCount;
+
+
     //instance variables
     String name;
     double fuelLevel;
@@ -11,6 +15,10 @@ public class Vehicle {
 
     boolean damaged;
     String color;
+
+    public Vehicle() {
+        totalVehicleCount++;
+    }
 
     public double accelerate(double speed, double durationInHours){
 
