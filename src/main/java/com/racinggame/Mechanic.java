@@ -1,5 +1,7 @@
 package com.racinggame;
 
+import com.racinggame.vehicle.AutoVehicle;
+
 public class Mechanic {
 
     public void repair(AutoVehicle autoVehicle){
