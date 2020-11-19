@@ -24,6 +24,15 @@ public class Vehicle {
         totalVehicleCount++;
     }
 
+
+    //  method  overloading
+    public double accelerate(double speed){
+       // double distance = accelerate(speed,1);
+        //return distance;   sau
+
+        return accelerate(speed, 1);
+    }
+
     public double accelerate(double speed, double durationInHours){
 
         if (fuelLevel <= 0 || damaged){
