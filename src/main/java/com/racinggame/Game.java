@@ -1,9 +1,9 @@
 package com.racinggame;
 
 import com.racinggame.utils.ScannerUtils;
+import com.racinggame.vehicle.Vehicle;
 
 public class Game {
-
 
 
     public void start(){
@@ -16,6 +16,7 @@ public class Game {
         String vehicleName = getVehicleNameFromUser();
 
         System.out.println("Vehicle name: " + vehicleName );
+
     }
 
 

@@ -62,7 +62,7 @@ public class Vehicle {
 
 
         double mileageMultiplier = 1;
-        if (speed >120){
+        if (speed >                      120){
             mileageMultiplier = speed/100;
         }
         double usedFuel = distance * mileage * mileageMultiplier/100;

@@ -8,15 +8,31 @@ import com.sun.scenario.effect.impl.sw.sse.SSEBlend_SRC_OUTPeer;
 
 public class App {
     public static void main( String[] args ) {
-        CheatingVehicle cheatingVehicle = new CheatingVehicle();
-        cheatingVehicle.setName("Cheater");
-      //  cheatingVehicle.accelerate(60,1);
 
-        cheatingVehicle.accelerate(60);
 
     //    Game game = new Game();
     //    game.start();
 
+
+        Vehicle cheatingVehicle = new CheatingVehicle();
+        cheatingVehicle.setName("Cheater");
+
+        //  cheatingVehicle.accelerate(60,1);
+
+
+        //Object type determines object implementation
+        cheatingVehicle.accelerate(60,1);
+
+
+        //variable type determines what methods can be invoked  directly
+        //type casting
+        if (cheatingVehicle instanceof CheatingVehicle) {
+            ((CheatingVehicle) cheatingVehicle).cheat();
+        }
+        //sau
+
+       // CheatingVehicle newVar = (CheatingVehicle) cheatingVehicle;
+      //  newVar.cheat();
 
 
 
