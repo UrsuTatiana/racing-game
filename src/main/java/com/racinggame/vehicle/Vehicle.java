@@ -15,12 +15,13 @@ public class Vehicle {
     protected double totalTraveledDistance;
     private double maxSpeed;
 
-   private boolean damaged;
-   private String color;
+    private boolean damaged;
+    private String color;
 
     private LocalDate manufacturingDate = LocalDate.now();
 
     public Vehicle() {
+
         totalVehicleCount++;
     }
 
@@ -62,19 +63,20 @@ public class Vehicle {
 
 
         double mileageMultiplier = 1;
-        if (speed >                      120){
+        if (speed > 120){
             mileageMultiplier = speed/100;
         }
-        double usedFuel = distance * mileage * mileageMultiplier/100;
 
+
+        double usedFuel = distance * mileage * mileageMultiplier/100;
 
         fuelLevel = fuelLevel - usedFuel;
        // fuelLevel -= usedFuel
         System.out.println("Remaining fuel for vehicle" + name + ": " + fuelLevel);
 
-
         return distance;
     }
+
 
     protected Vehicle reset(){
         totalTraveledDistance = 0;

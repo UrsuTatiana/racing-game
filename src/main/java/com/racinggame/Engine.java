@@ -6,6 +6,7 @@ public class Engine {
     private int capacity;
 
     public String getManufacturer() {
+
         return manufacturer;
     }
 
@@ -14,10 +15,12 @@ public class Engine {
     }
 
     public int getCapacity() {
+
         return capacity;
     }
 
     public void setCapacity(int capacity) {
+
         this.capacity = capacity;
     }
 }
