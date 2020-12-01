@@ -11,8 +11,13 @@ public class App {
 
 
       Game game = new Game();
-        game.start();
+      game.start();
 
+       /* String email = "flaviu@fasttrackit.org";
+        String[] emailParts = email.split("@");
+
+        System.out.println("First part: " + emailParts[0]);
+        System.out.println("Second part: " + emailParts[1]);*/
 
         //Vehicle cheatingVehicle = new CheatingVehicle();
       //  cheatingVehicle.setName("Cheater");
