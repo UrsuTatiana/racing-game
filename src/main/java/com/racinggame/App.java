@@ -5,13 +5,38 @@ import com.racinggame.vehicle.Car;
 import com.racinggame.vehicle.Vehicle;
 import com.racinggame.vehicle.cheater.CheatingVehicle;
 
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
+
 
 public class App {
     public static void main( String[] args ) {
 
-
         Game game = new Game();
-        game.start();
+       game.start();
+
+/*
+
+        List<String> favoriteAuthor = new ArrayList<>();
+        favoriteAuthor.add("Ion Creanga");
+        favoriteAuthor.add("Mihai Eminescu");
+        favoriteAuthor.add("Cogalniceanu");
+        System.out.println(favoriteAuthor);
+
+        boolean creangaFavorite = favoriteAuthor.contains("Ion Creanga");
+        System.out.println(creangaFavorite);
+
+
+        //wrapper classes
+        List<Integer> intigerList = Arrays.asList(1,5,20);
+*/
+
+        //int firstNumber = intigerList.get(0);
+                        // sau
+        //Integer firstNumber = intigerList.get(0);
+
+
 
        /* String email = "flaviu@fasttrackit.org";
         String[] emailParts = email.split("@");
