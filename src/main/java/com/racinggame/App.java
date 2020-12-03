@@ -4,14 +4,14 @@ import com.racinggame.vehicle.AutoVehicle;
 import com.racinggame.vehicle.Car;
 import com.racinggame.vehicle.Vehicle;
 import com.racinggame.vehicle.cheater.CheatingVehicle;
-import com.sun.scenario.effect.impl.sw.sse.SSEBlend_SRC_OUTPeer;
+
 
 public class App {
     public static void main( String[] args ) {
 
 
-      Game game = new Game();
-      game.start();
+        Game game = new Game();
+        game.start();
 
        /* String email = "flaviu@fasttrackit.org";
         String[] emailParts = email.split("@");
@@ -180,6 +180,8 @@ public class App {
 
        // System.out.println("modulo example");
        // System.out.println(4%2);
+
+
 
 
     }

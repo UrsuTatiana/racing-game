@@ -10,7 +10,8 @@ public class Mechanic {
 
         autoVehicle.setDamaged(false);
 
-        // dam dorim sa scadem distanta parcursa  cu 100 km la schimbarea motorului
+        // daca dorim sa scadem distanta parcursa cu 100 km la schimbarea motorului
         autoVehicle.setTotalTraveledDistance(autoVehicle.getTotalTraveledDistance() - 100);
     }
 }
+
