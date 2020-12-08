@@ -5,16 +5,36 @@ import com.racinggame.vehicle.Car;
 import com.racinggame.vehicle.Vehicle;
 import com.racinggame.vehicle.cheater.CheatingVehicle;
 
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.List;
+import java.util.*;
 
 
 public class App {
     public static void main( String[] args ) {
 
-        Game game = new Game();
-       game.start();
+        //Game game = new Game();
+      // game.start();
+
+        Set<String> cities = new HashSet<>();
+        cities.add("Cluj");
+        cities.add("Bucuresti");
+
+        Iterator<String> citiesIterator = cities.iterator();
+
+       /* for (int i = 0 ; i< cities.size(); i++){
+            String nextCity = citiesIterator.next();
+            System.out.println(nextCity);
+        }*/
+
+        while(citiesIterator.hasNext()){
+            System.out.println(citiesIterator.next());
+        }
+/*
+        String firstCity = citiesIterator.next();
+        String secondCity = citiesIterator.next();
+
+        System.out.println(firstCity);
+        System.out.println(secondCity);
+        */
 
 /*
 
