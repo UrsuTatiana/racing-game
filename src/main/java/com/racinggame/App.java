@@ -11,23 +11,40 @@ import java.util.*;
 public class App {
     public static void main( String[] args ) {
 
-        //Game game = new Game();
-      // game.start();
 
-        Set<String> cities = new HashSet<>();
+        Game game = new Game();
+       game.start();
+
+
+        /*String userlanguage = "en";
+        Map<String,String> descriptionTranslations = new HashMap<>();
+        descriptionTranslations.put("en","Some description");
+        descriptionTranslations.put("ro", "o descriere");
+
+        String description = descriptionTranslations.get(userlanguage);
+        System.out.println(description);
+
+        System.out.println("Available translation");
+
+        for(Map.Entry <String,String> entry:descriptionTranslations.entrySet()){
+            System.out.println(entry.getKey()+ ":" + entry.getValue());
+        }*/
+
+
+        /*Set<String> cities = new HashSet<>();
         cities.add("Cluj");
         cities.add("Bucuresti");
 
         Iterator<String> citiesIterator = cities.iterator();
-
+*/
        /* for (int i = 0 ; i< cities.size(); i++){
             String nextCity = citiesIterator.next();
             System.out.println(nextCity);
         }*/
 
-        while(citiesIterator.hasNext()){
+       /* while(citiesIterator.hasNext()){
             System.out.println(citiesIterator.next());
-        }
+        }*/
 /*
         String firstCity = citiesIterator.next();
         String secondCity = citiesIterator.next();
