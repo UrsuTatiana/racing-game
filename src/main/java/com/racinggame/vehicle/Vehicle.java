@@ -2,7 +2,7 @@ package com.racinggame.vehicle;
 
 import java.time.LocalDate;
 
-public class Vehicle {
+public abstract class Vehicle {
 
     //class variables (static variables)
    private static  int totalVehicleCount;

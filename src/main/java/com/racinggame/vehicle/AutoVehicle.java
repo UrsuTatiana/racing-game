@@ -2,7 +2,7 @@ package com.racinggame.vehicle;
 
 import com.racinggame.Engine;
 
-public class AutoVehicle extends  Vehicle {
+public abstract class AutoVehicle extends  Vehicle {
 
     // has a relationship or aggregation
     private Engine engine;

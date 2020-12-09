@@ -1,8 +1,9 @@
 package com.racinggame;
 
 import com.racinggame.utils.ScannerUtils;
+import com.racinggame.vehicle.Car;
 import com.racinggame.vehicle.Vehicle;
-import com.sun.xml.internal.ws.api.model.wsdl.WSDLOutput;
+
 
 import java.util.ArrayList;
 import java.util.List;
@@ -90,7 +91,7 @@ public class Game {
         for(int i = 1; i<= playerCount; i++){
             System.out.println("Preparing player " +  i  + " for the race");
 
-            Vehicle vehicle = new Vehicle();
+            Vehicle vehicle = new Car();
             vehicle.setName(getVehicleNameFromUser());
             vehicle.setFuelLevel(30);
             vehicle.setMaxSpeed(300);
