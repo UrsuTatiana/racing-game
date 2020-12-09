@@ -1,4 +1,4 @@
-package com.racinggame;
+package com.racinggame.competitor.vehicle;
 
 public class Engine {
 

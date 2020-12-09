@@ -1,6 +1,4 @@
-package com.racinggame;
-
-import com.racinggame.vehicle.AutoVehicle;
+package com.racinggame.competitor.vehicle;
 
 public class Mechanic {
 

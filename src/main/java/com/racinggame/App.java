@@ -1,12 +1,5 @@
 package com.racinggame;
 
-import com.racinggame.vehicle.AutoVehicle;
-import com.racinggame.vehicle.Car;
-import com.racinggame.vehicle.Vehicle;
-import com.racinggame.vehicle.cheater.CheatingVehicle;
-
-import java.util.*;
-
 
 public class App {
     public static void main( String[] args ) {

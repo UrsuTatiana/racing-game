@@ -1,6 +1,4 @@
-package com.racinggame.vehicle;
-
-import com.racinggame.Engine;
+package com.racinggame.competitor.vehicle;
 
 public class Car extends AutoVehicle {
 

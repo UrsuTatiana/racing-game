@@ -1,8 +1,8 @@
 package com.racinggame;
 
 import com.racinggame.utils.ScannerUtils;
-import com.racinggame.vehicle.Car;
-import com.racinggame.vehicle.Vehicle;
+import com.racinggame.competitor.vehicle.Car;
+import com.racinggame.competitor.vehicle.Vehicle;
 
 
 import java.util.ArrayList;

@@ -1,8 +1,6 @@
-package com.racinggame.vehicle;
+package com.racinggame.competitor.vehicle;
 
-import com.racinggame.Engine;
-
-public abstract class AutoVehicle extends  Vehicle {
+public abstract class AutoVehicle extends Vehicle {
 
     // has a relationship or aggregation
     private Engine engine;

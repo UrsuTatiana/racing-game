@@ -1,4 +1,4 @@
-package com.racinggame.vehicle;
+package com.racinggame.competitor.vehicle;
 
 import java.time.LocalDate;
 

@@ -1,6 +1,6 @@
-package com.racinggame.vehicle.cheater;
+package com.racinggame.competitor.vehicle.cheater;
 
-import com.racinggame.vehicle.Vehicle;
+import com.racinggame.competitor.vehicle.Vehicle;
 
 public class CheatingVehicle extends Vehicle {
 
