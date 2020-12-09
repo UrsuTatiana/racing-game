@@ -1,8 +1,10 @@
 package com.racinggame.competitor.vehicle;
 
+import com.racinggame.competitor.Mobile;
+
 import java.time.LocalDate;
 
-public abstract class Vehicle {
+public abstract class Vehicle implements Mobile {
 
     //class variables (static variables)
    private static  int totalVehicleCount;
@@ -25,6 +27,10 @@ public abstract class Vehicle {
         totalVehicleCount++;
     }
 
+    @Override
+    public boolean canMove() {
+        return fuelLevel > 0 && !damaged;
+    }
 
     //  method  overloading
     public double accelerate(double speed){
@@ -36,7 +42,7 @@ public abstract class Vehicle {
 
     public double accelerate(double speed, double durationInHours){
 
-        if (fuelLevel <= 0 || damaged){
+        if (!canMove()){
             System.out.println("you cannot accelerate");
             return 0;
         }

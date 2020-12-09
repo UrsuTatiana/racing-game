@@ -1,5 +1,6 @@
 package com.racinggame;
 
+import com.racinggame.competitor.Mobile;
 import com.racinggame.utils.ScannerUtils;
 import com.racinggame.competitor.vehicle.Car;
 import com.racinggame.competitor.vehicle.Vehicle;
@@ -13,7 +14,7 @@ import java.util.concurrent.ThreadLocalRandom;
 public class Game {
 
     private Track[] tracks = new Track[3];
-    private List<Vehicle> competitors = new ArrayList<>();
+    private List<Mobile> competitors = new ArrayList<>();
 
 
     public void start() {
@@ -42,11 +43,11 @@ public class Game {
 
 
         // enhanced for (for-each)
-        for (Vehicle competitor: competitors){
+        for (Mobile competitor: competitors){
             System.out.println("It is " + competitor.getName() + "'s turn");
 
             double speed = getAccelerationSpeedFromUser();
-            competitor.accelerate(speed);
+            competitor.accelerate(speed,1);
         }
     }
 
